@@ -1,0 +1,6 @@
+default:
+  script: _targets.R
+  store: _targets
+jetstream:
+  script: _targets.R
+  store: /media/volume/targets_store_volume/_targets
