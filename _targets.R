@@ -6,10 +6,11 @@
 # Load packages required to define the pipeline:
 library(targets)
 library(tarchetypes) # Load other packages as needed.
+library(paws.storage)
 
 # Set target options:
 tar_option_set(
-  packages = c("tibble", "ggplot2", "broom") # Packages that your targets need for their tasks.
+  packages = c("tibble", "ggplot2", "broom"), # Packages that your targets need for their tasks.
   # format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
@@ -42,6 +43,14 @@ tar_option_set(
   #   )
   #
   # Set other options as needed.
+  repository = "aws",
+  resources = tar_resources(
+    aws = tar_resources_aws(
+      bucket = "test123456",
+      prefix = "targets_test",
+      endpoint = "https://js2.jetstream-cloud.org:8001"
+    )
+  )
 )
 
 # Run the R scripts in the R/ folder with your custom functions:
