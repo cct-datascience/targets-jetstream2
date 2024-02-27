@@ -8,6 +8,7 @@ library(targets)
 library(tarchetypes) 
 library(paws.storage)
 library(crew)
+library(qs)
 
 # Set target options:
 tar_option_set(
