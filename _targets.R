@@ -5,13 +5,14 @@
 
 # Load packages required to define the pipeline:
 library(targets)
-library(tarchetypes) # Load other packages as needed.
+library(tarchetypes) 
 library(paws.storage)
+library(crew)
 
 # Set target options:
 tar_option_set(
   packages = c("tibble", "ggplot2", "broom"), # Packages that your targets need for their tasks.
-  # format = "qs", # Optionally set the default storage format. qs is fast.
+  format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
   # optional distributed computing. To use this capability
@@ -22,7 +23,7 @@ tar_option_set(
   # which run as local R processes. Each worker launches when there is work
   # to do and exits if 60 seconds pass with no tasks to run.
   #
-  #   controller = crew::crew_controller_local(workers = 2, seconds_idle = 60)
+  controller = crew::crew_controller_local(workers = 2, seconds_idle = 60),
   #
   # Alternatively, if you want workers to run on a high-performance computing
   # cluster, select a controller from the {crew.cluster} package.
