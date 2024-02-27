@@ -1,0 +1,1 @@
+Test of using `targets` with a S3 bucket for storage where the bucket is on Openstack/Jetstream2.
