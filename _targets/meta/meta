@@ -1,10 +1,4 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|ac697fa622824eec|||||||||||||||
-<<<<<<< HEAD|||||||||||||||||
-=======|||||||||||||||||
->>>>>>> 3e2ecf4cc08a1acd3e4ca3fd7afd5537118fd787|||||||||||||||||
-data|stem|075b5c828d3aff6e|43fae4011a0626f4|ef46db3751d8e999|33550471|bucket=test123456*region=NULL*key=targets_test/objects/data*endpoint=aHR0cHM6Ly9qczIuamV0c3RyZWFtLWNsb3VkLm9yZzo4MDAx*version=|t19780.0157981658s||1601|qs|aws|vector|||0.537||
-model|stem|5b163cffb52e9fc6|ea999546d42b186b|21a2d3f2c01f14df|808688450|bucket=test123456*region=NULL*key=targets_test/objects/model*endpoint=aHR0cHM6Ly9qczIuamV0c3RyZWFtLWNsb3VkLm9yZzo4MDAx*version=|t19780.0205151313s||5362|qs|aws|vector|||0.268||
-plot|stem|51f337f5fd9e57db|6a187b2aa4adfbe3|fc4db79a60a66480|874984291|bucket=test123456*region=NULL*key=targets_test/objects/plot*endpoint=aHR0cHM6Ly9qczIuamV0c3RyZWFtLWNsb3VkLm9yZzo4MDAx*version=|t19780.0205184183s||107283|qs|aws|vector|||0.024||
-plot_model|function|1b26ad2babce5ae6|||||||||||||||
-plot_png|stem|522a0d4a8d83b5ac|46eab94ab4ed8f97|dd1f2663470316d4|-2054678782|bucket=test123456*region=NULL*key=targets_test/objects/plot_png*endpoint=aHR0cHM6Ly9qczIuamV0c3RyZWFtLWNsb3VkLm9yZzo4MDAx*stage=fig.png*version=|t19780.0205248998s|9ffa3c68007d827e|67487|file|aws|vector|||0.314||
+.Random.seed|object|9541dba5bf07f140|||||||||||||||
+file|stem|6367dce08158bdee|aa6f4a8a746189eb|2c530c1562a7fbd1|1735323524|/Users/ericscott/Library/R/x86_64/4.4/library/terra/ex/elev.tif|t19873.2552430556s|39885e5e51bf1269|7994|file|local|vector|||0.003||
+rast_example|stem|8ce50eda86340013|a2509aa82f802f66|36c0a52b5db6bfeb|629061340|bucket=test123456*region=NULL*key=targets_test/objects/rast_example*endpoint=aHR0cHM6Ly9qczIuamV0c3RyZWFtLWNsb3VkLm9yZzo4MDAx*version=kSjkLUI05Vy9M8HIMihjjdsyOM9oYSZ|t20039.8506373956s||13192|format_custom&read=ZnVuY3Rpb24gKHBhdGgpIAp0ZXJyYTo6cmFzdChwYXRoKSArIDA&write=ZnVuY3Rpb24gKG9iamVjdCwgcGF0aCkgCnsKICAgIHRlcnJhOjp3cml0ZVJhc3RlcihvYmplY3QsIHBhdGgsIGZpbGV0eXBlID0gIkNPRyIsIG92ZXJ3cml0ZSA9IFRSVUUsIAogICAgICAgIGdkYWwgPSBOVUxMKQp9&marshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp3cmFwKG9iamVjdCk&unmarshal=ZnVuY3Rpb24gKG9iamVjdCkgCnRlcnJhOjp1bndyYXAob2JqZWN0KQ&convert=&copy=&repository=|aws|list|||0.039||
