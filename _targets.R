@@ -1,12 +1,14 @@
 library(targets)
-library(targets)
+library(tarchetypes)
 library(geotargets)
+library(paws.storage)
+
 tar_option_set(
   repository = "aws",
   resources = tar_resources(
     aws = tar_resources_aws(
       bucket = "test123456",
-      prefix = "targets_test",
+      prefix = "_targets",
       endpoint = "https://js2.jetstream-cloud.org:8001"
     )
   )
@@ -20,7 +22,7 @@ list(
   ),
   tar_terra_rast(
     rast_example,
-    terra::rast(file)+0,
+    terra::rast(file),
     filetype = "COG"
   )
 )
